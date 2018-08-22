@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TECHnepal</title>
+
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  	<link rel="stylesheet" type="text/css" href="../css/file1.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        alert("Jquery is working");
+        $("#hide").click(function(){
+          $(" .text").hide();
+        });
+
+        $("#show").click(function(){
+          $(".text").show();
+        });
+
+        //for local storage
+        $("#submit").click(function(){
+          var first=$("#fname").val();
+          var last=$("#lname").val();
+          var cty=$("#country").val();
+          var mail=$("#mail").val();
+          var msg=$("#message").val();
+
+          localStorage.setItem("Fname", first);
+          localStorage.setItem("Lname", last);
+          localStorage.setItem("Country", cty);
+          localStorage.setItem("Mail", mail);
+          localStorage.setItem("Message", msg);
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div id="navv">
+        		<!-- ================================================================
+        						Nevigation
+        		================================================================ -->
+            <nav id="navbar">
+              <div class="aap">
+              <a href="../html/aboutus.html">About</a>
+              <a class="active"href="../html/contactus.html">Contact</a>
+              <a href="../html/tipsandtrick.html">Tips & Trick</a>
+              <a href="../html/gadget.html">Latest Gadget</a>
+                <div id="dropdown">
+                      <button id="dropbtn">Sales
+                            <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div id="dropdown-content">
+                           <a href="../html/home.html#laptop">Laptop</a>
+                           <a href="../html/home.html#desktop">Desktop</a>
+                           <a href="../html/home.html#mobile">Mobile</a>
+                           <a href="../html/gadget.html">Acessories</a>
+
+                        </div>
+                </div>
+
+                    <a href="../html/home.html" >Home</a>
+                    </div>
+                    <div class="logo">
+
+                      <h1  id="icon" class="fa fa-free-code-camp fa-1.5x" aria-hidden="true"></h1>
+                      <a herf="../html/home.html" class="icon">
+                        <span class="second">Techno</span>
+                         <span  id="third">Nepal</span>
+                       </a>
+                    </div>
+                    </nav>
+                </div>
+
+
+		<!-- ================================================================
+						Header
+		================================================================ -->
+      </div>
+      <div class="titlel">
+        <span> Contact Us </span>
+
+      </div>
+
+		<!-- ================================================================
+						Subscriber
+		================================================================ -->
+            <div class="sus">
+              <h1>Join Our Mailing List</h1>
+
+            <div class="subscribe">
+                  <input type="email" placeholder="Email Address">
+                  <button type="submit" class="button_1">Subscribe</button>
+            </div>
+            </div>
+
+            		<!-- ================================================================
+            						Content
+            		================================================================ -->
+
+
+<div class="clear"></div>
+
+ <div class="contactuss">
+   <div id="contact">
+   <div class="loc">  Location:<br> Kathmandu, Chabahil </div>
+
+   <div class="callnumber">
+                 Contact Us:#
+                 <br> +9779862692814 <br>
+                +9779824756868
+                </div>
+                <div class="email">
+                  Email:<br>thinkuponce@gmail.com
+                </div>
+                </div>
+                <h2> Send Us Message</h2>
+                <div class="hidd">
+                <input type="button" id=show value="Click Here For Form"/>
+                <input type="button" id=hide value="hide text"/>
+</div>
+
+
+                <div class="clear"></div>
+                <div class="text">
+                <div class="container">
+                  <form action="../html/storage.html">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="fname">First Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="fname" placeholder="Your name..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="lname">Last Name</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="lname"  placeholder="Your last name..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="country">Country</label>
+                      </div>
+                      <div class="col-75">
+                        <select id="country" name="country">
+                          <option value="australia">Nepal</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                          <option value="china">China</option>
+                          <option value="germany">Germany</option>
+                          <option value="england">England</option>
+                          <option value="other">Other Country</option>
+
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-25">
+                    <label for="lname">E-Mail:</label>
+                  </div>
+                  <div class="col-75">
+                                <input type="email" name="mail" id="mail" placeholder="Eg.example@gmail.com"><br>
+                              </div>
+                              <br>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="Message">Message</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <input type="submit" id="submit" value="Submit">
+                      <input type="reset" value="Reset">
+
+                    </div>
+                  </form>
+                </div>
+
+                </div>
+                </div>
+    <div class="clr"></div>
+    <div class="gappage">
+    </div>
+    <footer>
+    <div class="footer">
+
+
+              <div class="footer1">
+        <h1>Join Our Mailing List</h1>
+                <div class="subscribe1">
+                      <input type="email" placeholder="Email Address">
+                      <button type="submit" class="button_2">Subscribe</button>
+                </div>
+                <div class="news">
+                  <h2>Share Knowledge ,and Built Career</h2>
+                  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-youtube"></a>
+
+                </div>
+              </div>
+
+      <section id="lol">
+
+
+              <div class="footer3">
+              <h1> WebSite </h1>
+              <p>This website provides services and information for laptops and computers; which  promote local business, gadget and accessories  of laptop. </p>
+              <h5> This Website is Designed By:</h5>
+              <div class="mee"> <img src="../image/me.jpg" width=200px height=200px > </div>
+                <h2> Shardool Rai</h2>
+              </div>
+
+            </div>
+            <div class="copyright">
+              <h1>Website &copy 2018</h1>
+            </div>
+  </footer>
+        <!-- ================================================================
+                Script
+        ================================================================ -->
+        <script src="../jss/file1.js">
+
+        </script>
+          <script src="../jss/slide.js"> </script>
+        </section>
+
+
+
+
+  </body>
+  </html>
